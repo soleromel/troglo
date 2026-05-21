@@ -8,7 +8,7 @@ function App() {
       {/* HEADER */}
       <header className="absolute top-0 left-0 w-full z-20 flex items-center p-6 text-white bg-gradient-to-b from-black/60 to-transparent">
         <img 
-          src="/troglo-plume-logo.svg" 
+          src={`${import.meta.env.BASE_URL}troglo-plume-logo.svg`} 
           alt="Logo La Troglo à plumes" 
           className="h-14 w-14 mr-4 filter invert" 
         />
@@ -20,9 +20,9 @@ function App() {
       {/* HERO SECTION avec Morphing */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <div className="hero-crossfade absolute inset-0">
-          <div className="bg-image img-1" style={{backgroundImage: "url('/troglo_upscale.webp')"}}></div>
-          <div className="bg-image img-2" style={{backgroundImage: "url('/magnific_lighttransfer_3009188033.webp')"}}></div>
-          <div className="bg-image img-3" style={{backgroundImage: "url('/IMG_0203.webp')"}}></div>
+          <div className="bg-image img-1" style={{backgroundImage: `url('${import.meta.env.BASE_URL}troglo_upscale.webp')`}}></div>
+          <div className="bg-image img-2" style={{backgroundImage: `url('${import.meta.env.BASE_URL}magnific_lighttransfer_3009188033.webp')`}}></div>
+          <div className="bg-image img-3" style={{backgroundImage: `url('${import.meta.env.BASE_URL}IMG_0203.webp')`}}></div>
         </div>
         
         <div className="absolute inset-0 bg-black/20 z-10"></div>
